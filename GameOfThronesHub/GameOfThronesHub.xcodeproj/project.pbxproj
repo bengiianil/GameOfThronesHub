@@ -17,6 +17,12 @@
 		B900E7522C8DCF6300223583 /* GameOfThronesHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7512C8DCF6300223583 /* GameOfThronesHubUITests.swift */; };
 		B900E7542C8DCF6300223583 /* GameOfThronesHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7532C8DCF6300223583 /* GameOfThronesHubUITestsLaunchTests.swift */; };
 		B900E7682C8DDA5D00223583 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7672C8DDA5D00223583 /* Urls.swift */; };
+		B900E76B2C8DDB2D00223583 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E76A2C8DDB2D00223583 /* NetworkManager.swift */; };
+		B900E76E2C8DDDD600223583 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E76D2C8DDDD600223583 /* CharacterModel.swift */; };
+		B900E7702C8DDF6A00223583 /* HouseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E76F2C8DDF6A00223583 /* HouseModel.swift */; };
+		B900E7722C8E1F2100223583 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7712C8E1F2100223583 /* HomeViewController.swift */; };
+		B900E7742C8E1F3300223583 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B900E7732C8E1F3300223583 /* HomeViewController.storyboard */; };
+		B900E7762C8E1F3E00223583 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7752C8E1F3E00223583 /* HomeViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +57,12 @@
 		B900E7512C8DCF6300223583 /* GameOfThronesHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesHubUITests.swift; sourceTree = "<group>"; };
 		B900E7532C8DCF6300223583 /* GameOfThronesHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		B900E7672C8DDA5D00223583 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
+		B900E76A2C8DDB2D00223583 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		B900E76D2C8DDDD600223583 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		B900E76F2C8DDF6A00223583 /* HouseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseModel.swift; sourceTree = "<group>"; };
+		B900E7712C8E1F2100223583 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		B900E7732C8E1F3300223583 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
+		B900E7752C8E1F3E00223583 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +115,7 @@
 			children = (
 				B900E7612C8DD49800223583 /* AppCoordinator */,
 				B900E7602C8DD0C900223583 /* Scenes */,
+				B900E7692C8DDB1D00223583 /* Managers */,
 				B900E7632C8DD6FC00223583 /* Models */,
 				B900E7622C8DD5AD00223583 /* Resources */,
 			);
@@ -158,6 +171,8 @@
 			isa = PBXGroup;
 			children = (
 				B900E7672C8DDA5D00223583 /* Urls.swift */,
+				B900E76D2C8DDDD600223583 /* CharacterModel.swift */,
+				B900E76F2C8DDF6A00223583 /* HouseModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -165,8 +180,9 @@
 		B900E7642C8DD70800223583 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				B900E7342C8DCF6200223583 /* ViewController.swift */,
-				B900E7362C8DCF6200223583 /* Main.storyboard */,
+				B900E7712C8E1F2100223583 /* HomeViewController.swift */,
+				B900E7732C8E1F3300223583 /* HomeViewController.storyboard */,
+				B900E7752C8E1F3E00223583 /* HomeViewModel.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -181,9 +197,19 @@
 		B900E7662C8DD71900223583 /* Splash */ = {
 			isa = PBXGroup;
 			children = (
+				B900E7342C8DCF6200223583 /* ViewController.swift */,
+				B900E7362C8DCF6200223583 /* Main.storyboard */,
 				B900E73B2C8DCF6300223583 /* LaunchScreen.storyboard */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		B900E7692C8DDB1D00223583 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				B900E76A2C8DDB2D00223583 /* NetworkManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +316,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B900E7742C8E1F3300223583 /* HomeViewController.storyboard in Resources */,
 				B900E73D2C8DCF6300223583 /* LaunchScreen.storyboard in Resources */,
 				B900E73A2C8DCF6300223583 /* Assets.xcassets in Resources */,
 				B900E7382C8DCF6200223583 /* Main.storyboard in Resources */,
@@ -318,8 +345,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B900E7352C8DCF6200223583 /* ViewController.swift in Sources */,
+				B900E7762C8E1F3E00223583 /* HomeViewModel.swift in Sources */,
+				B900E76E2C8DDDD600223583 /* CharacterModel.swift in Sources */,
 				B900E7312C8DCF6200223583 /* AppDelegate.swift in Sources */,
+				B900E7722C8E1F2100223583 /* HomeViewController.swift in Sources */,
+				B900E76B2C8DDB2D00223583 /* NetworkManager.swift in Sources */,
 				B900E7332C8DCF6200223583 /* SceneDelegate.swift in Sources */,
+				B900E7702C8DDF6A00223583 /* HouseModel.swift in Sources */,
 				B900E7682C8DDA5D00223583 /* Urls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,7 +536,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5YFKG5KHYZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GameOfThronesHub/Info.plist;
+				INFOPLIST_FILE = /Users/banil2/Desktop/UIKit/GameOfThronesHub/GameOfThronesHub/GameOfThronesHub/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -533,7 +565,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 5YFKG5KHYZ;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = GameOfThronesHub/Info.plist;
+				INFOPLIST_FILE = /Users/banil2/Desktop/UIKit/GameOfThronesHub/GameOfThronesHub/GameOfThronesHub/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

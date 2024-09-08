@@ -1,13 +1,12 @@
 //
-//  ViewController.swift
+//  SplashViewController.swift
 //  GameOfThronesHub
 //
-//  Created by Bengi Anıl on 8.09.2024.
 //
 
 import UIKit
 
-class ViewController: UIViewController {
+class SplashViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
