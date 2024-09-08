@@ -16,6 +16,7 @@
 		B900E7482C8DCF6300223583 /* GameOfThronesHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7472C8DCF6300223583 /* GameOfThronesHubTests.swift */; };
 		B900E7522C8DCF6300223583 /* GameOfThronesHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7512C8DCF6300223583 /* GameOfThronesHubUITests.swift */; };
 		B900E7542C8DCF6300223583 /* GameOfThronesHubUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7532C8DCF6300223583 /* GameOfThronesHubUITestsLaunchTests.swift */; };
+		B900E7682C8DDA5D00223583 /* Urls.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7672C8DDA5D00223583 /* Urls.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		B900E74D2C8DCF6300223583 /* GameOfThronesHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GameOfThronesHubUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B900E7512C8DCF6300223583 /* GameOfThronesHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesHubUITests.swift; sourceTree = "<group>"; };
 		B900E7532C8DCF6300223583 /* GameOfThronesHubUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameOfThronesHubUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B900E7672C8DDA5D00223583 /* Urls.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Urls.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +101,10 @@
 		B900E72F2C8DCF6200223583 /* GameOfThronesHub */ = {
 			isa = PBXGroup;
 			children = (
-				B900E7302C8DCF6200223583 /* AppDelegate.swift */,
-				B900E7322C8DCF6200223583 /* SceneDelegate.swift */,
-				B900E7342C8DCF6200223583 /* ViewController.swift */,
-				B900E7362C8DCF6200223583 /* Main.storyboard */,
-				B900E7392C8DCF6300223583 /* Assets.xcassets */,
-				B900E73B2C8DCF6300223583 /* LaunchScreen.storyboard */,
-				B900E73E2C8DCF6300223583 /* Info.plist */,
+				B900E7612C8DD49800223583 /* AppCoordinator */,
+				B900E7602C8DD0C900223583 /* Scenes */,
+				B900E7632C8DD6FC00223583 /* Models */,
+				B900E7622C8DD5AD00223583 /* Resources */,
 			);
 			path = GameOfThronesHub;
 			sourceTree = "<group>";
@@ -125,6 +124,66 @@
 				B900E7532C8DCF6300223583 /* GameOfThronesHubUITestsLaunchTests.swift */,
 			);
 			path = GameOfThronesHubUITests;
+			sourceTree = "<group>";
+		};
+		B900E7602C8DD0C900223583 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				B900E7662C8DD71900223583 /* Splash */,
+				B900E7642C8DD70800223583 /* Home */,
+				B900E7652C8DD70E00223583 /* Detail */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		B900E7612C8DD49800223583 /* AppCoordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B900E7302C8DCF6200223583 /* AppDelegate.swift */,
+				B900E7322C8DCF6200223583 /* SceneDelegate.swift */,
+			);
+			path = AppCoordinator;
+			sourceTree = "<group>";
+		};
+		B900E7622C8DD5AD00223583 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B900E7392C8DCF6300223583 /* Assets.xcassets */,
+				B900E73E2C8DCF6300223583 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B900E7632C8DD6FC00223583 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B900E7672C8DDA5D00223583 /* Urls.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B900E7642C8DD70800223583 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				B900E7342C8DCF6200223583 /* ViewController.swift */,
+				B900E7362C8DCF6200223583 /* Main.storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		B900E7652C8DD70E00223583 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		B900E7662C8DD71900223583 /* Splash */ = {
+			isa = PBXGroup;
+			children = (
+				B900E73B2C8DCF6300223583 /* LaunchScreen.storyboard */,
+			);
+			path = Splash;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,6 +320,7 @@
 				B900E7352C8DCF6200223583 /* ViewController.swift in Sources */,
 				B900E7312C8DCF6200223583 /* AppDelegate.swift in Sources */,
 				B900E7332C8DCF6200223583 /* SceneDelegate.swift in Sources */,
+				B900E7682C8DDA5D00223583 /* Urls.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -450,6 +510,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -478,6 +539,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
