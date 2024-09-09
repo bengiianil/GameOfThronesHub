@@ -21,6 +21,8 @@ class HomeViewModel {
 
         do {
             let houseList: [House] = try await NetworkManager.shared.fetchData(url: url)
+            self.houseList = houseList
+
         } catch {
             print("Failed to fetch house list: \(error.localizedDescription)")
         }

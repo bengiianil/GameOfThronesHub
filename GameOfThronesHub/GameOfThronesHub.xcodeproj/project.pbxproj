@@ -24,6 +24,7 @@
 		B900E7742C8E1F3300223583 /* HomeViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B900E7732C8E1F3300223583 /* HomeViewController.storyboard */; };
 		B900E7762C8E1F3E00223583 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7752C8E1F3E00223583 /* HomeViewModel.swift */; };
 		B900E7792C8F5CBB00223583 /* UIStoryboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7782C8F5CBB00223583 /* UIStoryboard+.swift */; };
+		B900E77C2C8F7A7B00223583 /* HouseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E77B2C8F7A7B00223583 /* HouseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +66,7 @@
 		B900E7732C8E1F3300223583 /* HomeViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = HomeViewController.storyboard; sourceTree = "<group>"; };
 		B900E7752C8E1F3E00223583 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B900E7782C8F5CBB00223583 /* UIStoryboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+.swift"; sourceTree = "<group>"; };
+		B900E77B2C8F7A7B00223583 /* HouseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -183,6 +185,7 @@
 		B900E7642C8DD70800223583 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				B900E77A2C8F7A7400223583 /* Cell */,
 				B900E7712C8E1F2100223583 /* HomeViewController.swift */,
 				B900E7732C8E1F3300223583 /* HomeViewController.storyboard */,
 				B900E7752C8E1F3E00223583 /* HomeViewModel.swift */,
@@ -221,6 +224,14 @@
 				B900E7782C8F5CBB00223583 /* UIStoryboard+.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B900E77A2C8F7A7400223583 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				B900E77B2C8F7A7B00223583 /* HouseCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -362,6 +373,7 @@
 				B900E7312C8DCF6200223583 /* AppDelegate.swift in Sources */,
 				B900E7722C8E1F2100223583 /* HomeViewController.swift in Sources */,
 				B900E76B2C8DDB2D00223583 /* NetworkManager.swift in Sources */,
+				B900E77C2C8F7A7B00223583 /* HouseCell.swift in Sources */,
 				B900E7332C8DCF6200223583 /* SceneDelegate.swift in Sources */,
 				B900E7702C8DDF6A00223583 /* HouseModel.swift in Sources */,
 				B900E7682C8DDA5D00223583 /* Urls.swift in Sources */,
