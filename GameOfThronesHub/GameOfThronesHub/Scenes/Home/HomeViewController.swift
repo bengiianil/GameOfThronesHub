@@ -8,5 +8,12 @@
 import UIKit
 
 class HomeViewController: UIViewController {
+    private var homeViewModel: HomeViewModel!
     
+    override func viewDidLoad() {
+        self.homeViewModel = HomeViewModel()
+        Task {
+            await homeViewModel.getHouseList()
+        }
+    }
 }

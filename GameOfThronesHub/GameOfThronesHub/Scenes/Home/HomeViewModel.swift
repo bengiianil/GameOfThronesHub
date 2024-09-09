@@ -5,26 +5,24 @@
 //  Created by Bengi Anıl on 8.09.2024.
 //
 
-import Foundation
 import Combine
+import Foundation
 
 class HomeViewModel {
     
-    private var model: HouseModel
+    @Published var houseList: [House]?
     
-    init(model: HouseModel) {
-        self.model = model
+    init(houseList: [House]? = nil) {
+        self.houseList = houseList
     }
     
     func getHouseList() async {
         let url = Urls.baseUrl + Paths.houses
 
         do {
-            let houseList: [HouseModel] = try await NetworkManager.fetchData(url: url)
-            print(houseList) // Handle the fetched list of houses
+            let houseList: [House] = try await NetworkManager.shared.fetchData(url: url)
         } catch {
-            print("Failed to fetch house list: \(error)")
+            print("Failed to fetch house list: \(error.localizedDescription)")
         }
-
     }
 }
