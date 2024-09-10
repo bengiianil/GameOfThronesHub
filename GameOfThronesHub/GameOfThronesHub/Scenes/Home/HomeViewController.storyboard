@@ -17,33 +17,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fib-2V-oBF">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Fib-2V-oBF">
                                 <rect key="frame" x="0.0" y="59" width="393" height="793"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="HouseCell" id="ab9-hG-hx8" customClass="HouseCell" customModule="GameOfThronesHub" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="50" width="393" height="43.333332061767578"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="gray" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="HouseCell" rowHeight="111" id="ab9-hG-hx8" customClass="HouseCell" customModule="GameOfThronesHub" customModuleProvider="target">
+                                        <rect key="frame" x="20" y="55.333332061767578" width="353" height="111"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ab9-hG-hx8" id="VJX-be-7g9">
-                                            <rect key="frame" x="0.0" y="0.0" width="393" height="43.333332061767578"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="322.66666666666669" height="111"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqW-b5-hks">
-                                                    <rect key="frame" x="32" y="10.999999999999998" width="329" height="21.333333333333329"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z58-FG-IGr">
+                                                    <rect key="frame" x="24" y="24" width="274.66666666666669" height="63"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xqW-b5-hks">
+                                                            <rect key="frame" x="0.0" y="0.0" width="274.66666666666669" height="41.333333333333336"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VTH-Vq-yNg">
+                                                            <rect key="frame" x="0.0" y="41.333333333333329" width="274.66666666666669" height="21.666666666666671"/>
+                                                            <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstItem="xqW-b5-hks" firstAttribute="top" secondItem="VJX-be-7g9" secondAttribute="topMargin" id="CKd-Wb-2jG"/>
-                                                <constraint firstAttribute="trailingMargin" secondItem="xqW-b5-hks" secondAttribute="trailing" constant="12" id="Idu-UQ-QKR"/>
-                                                <constraint firstAttribute="bottomMargin" secondItem="xqW-b5-hks" secondAttribute="bottom" id="NHo-2K-U8B"/>
-                                                <constraint firstItem="xqW-b5-hks" firstAttribute="leading" secondItem="VJX-be-7g9" secondAttribute="leadingMargin" constant="12" id="oxb-VQ-Xdh"/>
+                                                <constraint firstAttribute="bottom" secondItem="z58-FG-IGr" secondAttribute="bottom" constant="24" id="2bk-VW-cGu"/>
+                                                <constraint firstItem="z58-FG-IGr" firstAttribute="top" secondItem="VJX-be-7g9" secondAttribute="top" constant="24" id="4Yu-x7-axD"/>
+                                                <constraint firstItem="z58-FG-IGr" firstAttribute="leading" secondItem="VJX-be-7g9" secondAttribute="leading" constant="24" id="AUR-eK-odK"/>
+                                                <constraint firstAttribute="trailing" secondItem="z58-FG-IGr" secondAttribute="trailing" constant="24" id="f0B-Z5-3zY"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <outlet property="houseNameLabel" destination="xqW-b5-hks" id="pWY-dL-PZ9"/>
+                                            <outlet property="houseName" destination="xqW-b5-hks" id="6dL-c2-Cvz"/>
+                                            <outlet property="houseRegion" destination="VTH-Vq-yNg" id="oTz-H4-Baw"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>

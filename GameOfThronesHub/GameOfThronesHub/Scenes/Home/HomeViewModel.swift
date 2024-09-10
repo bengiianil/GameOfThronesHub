@@ -10,21 +10,30 @@ import Foundation
 
 class HomeViewModel {
     
-    @Published var houseList: [House]?
-    
-    init(houseList: [House]? = nil) {
-        self.houseList = houseList
+    @Published var houseContent: [House]?
+    @Published var houseList: [HouseCellViewModel] = []
+
+    init(houseContent: [House]? = nil) {
+        self.houseContent = houseContent
     }
     
     func getHouseList() async {
         let url = Urls.baseUrl + Paths.houses
 
         do {
-            let houseList: [House] = try await NetworkManager.shared.fetchData(url: url)
-            self.houseList = houseList
+            let houseContent: [House] = try await NetworkManager.shared.fetchData(url: url)
+            self.houseContent = houseContent
+            self.houseList = houseContent.compactMap { HouseCellViewModel(house: $0 ) }
 
         } catch {
             print("Failed to fetch house list: \(error.localizedDescription)")
         }
+    }
+        
+    func getCellViewModel(atIndex index: Int) -> HouseCellViewModel? {
+        if houseList.count > index {
+            return houseList[index]
+        }
+        return nil
     }
 }

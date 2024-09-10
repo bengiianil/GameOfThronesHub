@@ -25,6 +25,8 @@
 		B900E7762C8E1F3E00223583 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7752C8E1F3E00223583 /* HomeViewModel.swift */; };
 		B900E7792C8F5CBB00223583 /* UIStoryboard+.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7782C8F5CBB00223583 /* UIStoryboard+.swift */; };
 		B900E77C2C8F7A7B00223583 /* HouseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E77B2C8F7A7B00223583 /* HouseCell.swift */; };
+		B900E7872C90AC4A00223583 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7862C90AC4A00223583 /* ImageManager.swift */; };
+		B900E7892C90AC9C00223583 /* HouseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7882C90AC9C00223583 /* HouseCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		B900E7752C8E1F3E00223583 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		B900E7782C8F5CBB00223583 /* UIStoryboard+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+.swift"; sourceTree = "<group>"; };
 		B900E77B2C8F7A7B00223583 /* HouseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCell.swift; sourceTree = "<group>"; };
+		B900E7862C90AC4A00223583 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		B900E7882C90AC9C00223583 /* HouseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,7 @@
 			isa = PBXGroup;
 			children = (
 				B900E76A2C8DDB2D00223583 /* NetworkManager.swift */,
+				B900E7862C90AC4A00223583 /* ImageManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -230,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				B900E77B2C8F7A7B00223583 /* HouseCell.swift */,
+				B900E7882C90AC9C00223583 /* HouseCellViewModel.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -369,12 +375,14 @@
 				B900E7792C8F5CBB00223583 /* UIStoryboard+.swift in Sources */,
 				B900E7352C8DCF6200223583 /* SplashViewController.swift in Sources */,
 				B900E7762C8E1F3E00223583 /* HomeViewModel.swift in Sources */,
+				B900E7872C90AC4A00223583 /* ImageManager.swift in Sources */,
 				B900E76E2C8DDDD600223583 /* CharacterModel.swift in Sources */,
 				B900E7312C8DCF6200223583 /* AppDelegate.swift in Sources */,
 				B900E7722C8E1F2100223583 /* HomeViewController.swift in Sources */,
 				B900E76B2C8DDB2D00223583 /* NetworkManager.swift in Sources */,
 				B900E77C2C8F7A7B00223583 /* HouseCell.swift in Sources */,
 				B900E7332C8DCF6200223583 /* SceneDelegate.swift in Sources */,
+				B900E7892C90AC9C00223583 /* HouseCellViewModel.swift in Sources */,
 				B900E7702C8DDF6A00223583 /* HouseModel.swift in Sources */,
 				B900E7682C8DDA5D00223583 /* Urls.swift in Sources */,
 			);

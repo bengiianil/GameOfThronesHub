@@ -35,20 +35,25 @@ class HomeViewController: UIViewController {
     
     // MARK: Methods
     func setupBindings() {
-        homeViewModel.$houseList
+        homeViewModel.$houseContent
             .receive(on: DispatchQueue.main)
-            .sink { [weak self] houseList in
-                self?.updateDataSource(with: houseList ?? [])
+            .sink { [weak self] content in
+                self?.updateDataSource(with: content ?? [])
             }
             .store(in: &cancellables)
     }
     
     func setupViews() {
         self.navigationItem.hidesBackButton = true
+        self.navigationController?.navigationBar.prefersLargeTitles = true
+        self.title = "Houses"
 
         dataSource = UITableViewDiffableDataSource<Section, House>(tableView: tableView) { tableView, indexPath, house in
             let cell = tableView.dequeueReusableCell(withIdentifier: "HouseCell", for: indexPath) as! HouseCell
-            cell.houseNameLabel.text = house.name
+            if let item = self.homeViewModel.getCellViewModel(atIndex: indexPath.row) {
+                cell.setupHouseCell(with: item)
+            }
+            
             return cell
         }
         
