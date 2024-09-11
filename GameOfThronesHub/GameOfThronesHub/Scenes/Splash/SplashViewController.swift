@@ -21,4 +21,3 @@ class SplashViewController: UIViewController {
         self.navigationController?.pushViewController(homeViewController, animated: true)
     }
 }
-
