@@ -27,6 +27,9 @@
 		B900E77C2C8F7A7B00223583 /* HouseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E77B2C8F7A7B00223583 /* HouseCell.swift */; };
 		B900E7872C90AC4A00223583 /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7862C90AC4A00223583 /* ImageManager.swift */; };
 		B900E7892C90AC9C00223583 /* HouseCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E7882C90AC9C00223583 /* HouseCellViewModel.swift */; };
+		B900E78B2C90C9AE00223583 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E78A2C90C9AE00223583 /* DetailViewController.swift */; };
+		B900E78D2C90C9B600223583 /* DetailViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B900E78C2C90C9B600223583 /* DetailViewController.storyboard */; };
+		B900E78F2C90C9BF00223583 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B900E78E2C90C9BF00223583 /* DetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +74,9 @@
 		B900E77B2C8F7A7B00223583 /* HouseCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCell.swift; sourceTree = "<group>"; };
 		B900E7862C90AC4A00223583 /* ImageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
 		B900E7882C90AC9C00223583 /* HouseCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseCellViewModel.swift; sourceTree = "<group>"; };
+		B900E78A2C90C9AE00223583 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		B900E78C2C90C9B600223583 /* DetailViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailViewController.storyboard; sourceTree = "<group>"; };
+		B900E78E2C90C9BF00223583 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +206,9 @@
 		B900E7652C8DD70E00223583 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				B900E78A2C90C9AE00223583 /* DetailViewController.swift */,
+				B900E78C2C90C9B600223583 /* DetailViewController.storyboard */,
+				B900E78E2C90C9BF00223583 /* DetailViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -346,6 +355,7 @@
 			files = (
 				B900E7742C8E1F3300223583 /* HomeViewController.storyboard in Resources */,
 				B900E73D2C8DCF6300223583 /* LaunchScreen.storyboard in Resources */,
+				B900E78D2C90C9B600223583 /* DetailViewController.storyboard in Resources */,
 				B900E73A2C8DCF6300223583 /* Assets.xcassets in Resources */,
 				B900E7382C8DCF6200223583 /* Main.storyboard in Resources */,
 			);
@@ -385,6 +395,8 @@
 				B900E7892C90AC9C00223583 /* HouseCellViewModel.swift in Sources */,
 				B900E7702C8DDF6A00223583 /* HouseModel.swift in Sources */,
 				B900E7682C8DDA5D00223583 /* Urls.swift in Sources */,
+				B900E78F2C90C9BF00223583 /* DetailViewModel.swift in Sources */,
+				B900E78B2C90C9AE00223583 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
