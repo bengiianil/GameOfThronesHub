@@ -35,7 +35,8 @@ class HomeViewController: UIViewController {
         viewModel.$houseContent
             .receive(on: DispatchQueue.main)
             .sink { [weak self] content in
-                self?.updateDataSource(with: content)
+                guard let strongSelf = self else { return }
+                strongSelf.updateDataSource(with: content)
             }
             .store(in: &cancellables)
     }
@@ -74,7 +75,24 @@ class HomeViewController: UIViewController {
         spinner.startAnimating()
         return footerView
     }
+    
+    func navigateToDetailViewController(item: House) {
+        let detailViewController: DetailViewController = UIStoryboard.createViewController()
+        detailViewController.house = item
+        self.navigationController?.pushViewController(detailViewController, animated: true)
+    }
 }
+
+// MARK: - UITableViewDelegate -
+extension HomeViewController: UITableViewDelegate {
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let item = dataSource.itemIdentifier(for: indexPath) else { return }
+        tableView.deselectRow(at: indexPath, animated: true)
+        navigateToDetailViewController(item: item)
+    }
+}
+
 
 // MARK: - UIScrollViewDelegate -
 extension HomeViewController: UIScrollViewDelegate {
